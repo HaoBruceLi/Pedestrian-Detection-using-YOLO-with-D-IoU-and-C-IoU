@@ -124,7 +124,7 @@ If you want to use original pretrained weights for YOLOv3:
     4. use model_data/darknet53_weights.h5 in train.py
 
 ---
-
+ 
 
 
 Thanks the author for sharing the Python YOLOv3 source code, the url: https://github.com/qqwweee/keras-yolo3
