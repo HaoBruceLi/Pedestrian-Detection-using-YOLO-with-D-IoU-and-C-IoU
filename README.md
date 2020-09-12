@@ -10,7 +10,7 @@ This paper proposes a method to improve the performance of pedestrian detection.
 - tensorflow 1.6.0 or more
 
 ####  Structure
-
+<pre>
 model_data------|---voc_annotation.py               # run before training voc dataset
                 |---coco_annotation.py              # run before training coco dataset
                 |---yolo_weights.h5                 # pre-trained weight file
@@ -24,24 +24,24 @@ Test------------|---result_imges                    # store tested images
 yolo3-----------|---model.py                        # modify the training strategy
                 |---utils.py                        # bottleneck training added in addtional 
                  
---------------------convert.py                      # Convert the Darknet YOLO model to a Keras model
---------------------darknet53.cfg                   # orignal network from Joseph
---------------------kmeans.py                       # k-means clustering and regression
---------------------train.py                        # train specific model
---------------------yolo.py                         # detecting configuration in images and videos
---------------------yolov3.cfg                      # Converted model from Darknet
---------------------yolo_video.py                   # more command line option parsing 
+convert.py                                          # Convert the Darknet YOLO model to a Keras model
+darknet53.cfg                                       # orignal network from Joseph
+kmeans.py                                           # k-means clustering and regression
+train.py                                            # train specific model
+yolo.py                                             # detecting configuration in images and videos
+yolov3.cfg                                          # Converted model from Darknet
+yolo_video.py                                       # more command line option parsing 
 
+</pre>
 
-
-
+<pre>
 ####  Quick Test
 
 1. put test images to /Test/test_imges
 2. run yolo_test.py
 3. result stored in /Test/result_imges
        |||||
-       vvvvv
+       vvvvv   
 ==============================RUN IN TERMINAL==============================
 cd ./Test
 python3 yolo_test.py
@@ -68,9 +68,9 @@ python3 yolo_video.py [video_path] [output_path (optional)]
 ===========================================================================
 
 For another version of YOLO, just do in a similar way, just specify model path and anchor path with `--model model_file` and `--anchors anchor_file`.
+</pre>
 
-
-### Usage
+#### Usage
 Use --help to see usage of yolo_video.py:
 ```
 usage: yolo_video.py [-h] [--model MODEL] [--anchors ANCHORS]
