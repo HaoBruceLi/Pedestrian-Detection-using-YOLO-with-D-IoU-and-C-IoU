@@ -13,7 +13,7 @@ This paper proposes a method to improve the performance of pedestrian detection.
 <pre>
 model_data------|---voc_annotation.py               # run before training voc dataset
                 |---coco_annotation.py              # run before training coco dataset
-                |---yolo_weights.h5                 # pre-trained weight file
+                |---yolo_weights.h5                 # pre-trained weight file [over 25mb, not uploaded]
                 |---yolo_hao.h5                     # trained YOLO model      
                 |---xxx_anchor and classess.txt     # traine different dataset  
 
